@@ -57,9 +57,6 @@ function runestone_add_instance($data, $mform) {
 
     require_once($CFG->dirroot.'/mod/runestone/locallib.php');
 
-    print_object($data);
-    print_r($data);
-
     $data->printintro = (int)!empty($data->printintro);
 
     $data->id = $DB->insert_record('runestone', $data);
