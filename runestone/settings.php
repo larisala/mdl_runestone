@@ -41,7 +41,7 @@ if ($ADMIN->fulltree) {
 
     $settings->add(new admin_setting_configpasswordunmask('mod_runestone/dbpass', get_string('dbpass', 'mod_runestone'), '', ''));
 
-    $settings->add(new admin_setting_configtext('mod_runestone/dbname', get_string('dbname', 'mod_runestone'), get_string('dbname_desc', 'mod_runestone'), ''));
+    $settings->add(new admin_setting_configtext('mod_runestone/dbname', get_string('dbname', 'mod_runestone'), get_string('dbname_desc', 'mod_runestone'), 'runestone'));
 
     $settings->add(new admin_setting_configtext('mod_runestone/dbencoding', get_string('dbencoding', 'mod_runestone'), '', 'utf-8'));
 }
