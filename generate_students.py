@@ -28,7 +28,7 @@ def make_csv(filename, coursename):
   df_new = pd.DataFrame(columns=['username', 'email', 'first_name', 'last_name'],
     data=df[['username','email','firstname','lastname']].values)
   pw_length = 8
-  df_new['pw'] = get_random_pw(pw_length, len(df_new.index))
+  df_new['password'] = get_random_pw(pw_length, len(df_new.index))
   df_new['course'] = coursename
   df_new.to_csv('students.csv', index=False)
 
